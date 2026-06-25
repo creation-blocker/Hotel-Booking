@@ -57,9 +57,9 @@ const Navbar = () => {
                         <div className={`${isScrolled ? "bg-gray-700" : "bg-white"} h-0.5 w-0 group-hover:w-full transition-all duration-300`} />
                     </a>
                 ))}
-                <button onClick={() => navigate('/owner')} className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>
+                {/* <button onClick={() => navigate('/owner')} className={`border px-4 py-1 text-sm font-light rounded-full cursor-pointer ${isScrolled ? 'text-black' : 'text-white'} transition-all`}>
                     Dashboard
-                </button>
+                </button> */}
             </div>
 
             {/* Desktop Right */}
@@ -105,9 +105,9 @@ const Navbar = () => {
                     </a>
                 ))}
 
-                {user && <button onClick={() => { setIsMenuOpen(false); navigate('/owner') }} className="rounded-full border  px-6 py-3 text-sm font-medium transition">
+                {/* {user && <button onClick={() => { setIsMenuOpen(false); navigate('/owner') }} className="rounded-full border  px-6 py-3 text-sm font-medium transition">
                     Dashboard
-                </button>}
+                </button>} */}
 
                 {!user && <button onClick={() => { setIsMenuOpen(false); openSignIn() }} className="rounded-full text-md border  px-12 py-3 text-sm font-medium transition">
                     Login
