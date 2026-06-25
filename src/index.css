@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap');
 @import "tailwindcss";
 
-@theme {
+:root {
   --color-primary: #2563EB;
   --color-secondary: #FBBF24;
 }
@@ -10,10 +10,23 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
-  font-family: 'Playfair', serif;
+/* Use Inter for body (clean, readable) and Playfair Display for headings */
+html, body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #111827;
 }
 
 .font-playfair {
-  font-family: 'Playfair', serif !important;
+  font-family: 'Playfair Display', serif !important;
+}
+
+/* Small utility styles for nicer typography */
+.lead {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
 }
